@@ -1,0 +1,566 @@
+
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 10px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+}
+
+/* Left part styles */
+.leftpart {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+}
+
+/* Right part styles */
+.rightpart {
+    display: flex;
+}
+
+/* Contact button styles */
+#contact {
+    background-color: rgb(247, 75, 75);
+    width: 110px;
+    border-radius: 4px;
+    color: white;
+    font-family: Montserrat;
+    height: 30px;
+    border: 0px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+#contact:hover {
+    background-color: rgb(200, 60, 60);
+}
+
+/* Headings styles */
+h1 {
+    font-family: Montserrat;
+}
+
+h2 {
+    color: rgb(247, 75, 75);
+    font-family: Montserrat;
+}
+
+/* Paragraph styles */
+p {
+    color: rgb(140, 140, 140);
+    font-family: Montserrat;
+}
+
+/* Popup styles */
+.popup {
+    background-color: white;
+    width: 350px;
+    height: 320px;
+    border: 0px solid rgb(193, 193, 193);
+    border-radius: 5px;
+    padding: 20px;
+    gap: 10px;
+    top: 200px;
+    left: 600px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.popup h2 {
+    color: black;
+    font-family: Montserrat;
+}
+
+.popup input[type="text"] {
+    border: none;
+    border-bottom: 2px solid gray;
+    font-family: Montserrat;
+    font-size: small;
+    cursor: pointer;
+    padding: 5px;
+    transition: border-color 0.3s;
+}
+
+.popup input[type="text"]:focus {
+    border-bottom: 2px solid rgb(247, 75, 75);
+    outline: none;
+}
+
+.popup input[type="checkbox"] {
+    border: 1px solid rgb(247, 75, 75);
+    cursor: pointer;
+}
+
+.name {
+    display: flex;
+    gap: 5px;
+}
+
+.fname,
+.lname {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.popup p {
+    font-weight: bold;
+    font-size: small;
+    color: rgba(126, 120, 120, 0.722);
+}
+
+.popup button {
+    background-color: rgb(247, 75, 75);
+    border-radius: 2px;
+    color: white;
+    border: none;
+    height: 40px;
+    font-family: Montserrat;
+    transition: background-color 0.3s;
+}
+
+.popup button:hover {
+    background-color: rgb(200, 60, 60);
+}
+
+.popup label {
+    font-family: Montserrat;
+    color: rgba(126, 120, 120, 0.888);
+    font-size: small;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    user-select: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid red; /* Adjust the border width to 1px to fit the smaller size */
+    border-radius: 2px;
+    margin-right: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+    position: relative; /* Required for the checkmark positioning */
+}
+
+.custom-checkbox:hover .checkmark {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Change background color when checkbox is checked */
+.custom-checkbox input:checked + .checkmark {
+    background-color: red;
+    border-color: red;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 3px;
+    top: 1px;
+    width: 2px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked + .checkmark:after {
+    display: block;
+}
+.container2{
+    margin: 50px;
+    margin-left: 280px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   padding: 16px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+
+}
+.content{
+    display: flex;
+    gap: 10px;
+    width: 1000px;
+    align-items: center;
+    
+}
+.content p{
+    width: 400px;
+}
+.content h1{
+    width: 250px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.rh{
+    font-size: 18px;
+    color: rgb(247, 75, 75);
+    font-family: Montserrat;
+    font-weight: bolder;
+}
+.bh{
+    font-size: 25px;
+    color: black;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.container3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    margin: 0px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
+}
+.outer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+.qualities{
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 700px;
+}
+.quality{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+.head{
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    font-family: Montserrat;
+}
+.cap{
+    color: black;
+    font-size: small;
+    font-weight: normal;
+    font-family: Montserrat;
+}
+
+/* Container styles */
+.container4 {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: white; /* Slightly lighter background color for a fresh look */
+    border-radius: 8px; /* Added border radius for softer edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Inner container styles */
+.innerContainer {
+    display: flex;
+    gap: 30px; /* Increased gap for better spacing */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Image styles */
+.image img {
+    width: 600px;
+    border-radius: 8px; /* Added border radius for softer edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Content styles */
+.content4 {
+    padding: 10px; /* Increased padding for better spacing */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increased gap for better spacing */
+    width: 250px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white; /* Added background color for contrast */
+    border-radius: 8px; /* Added border radius for softer edges */
+}
+
+/* Headline styles */
+
+/* Card styles */
+.card {
+    padding: 20px; /* Increased padding for better content spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    background-color: rgb(239, 238, 238);
+    border-radius: 8px; /* Added border radius for softer edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added transition for smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+/* General paragraph styles */
+/* Add your existing CSS styles here */
+
+/* Selected card styles */
+.selected {
+    background-color: rgb(247, 75, 75) !important;
+}
+
+.selected .head,
+.selected .cap {
+    color: white !important;
+}
+
+/* Container styles */
+.container5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* Unified background color */
+    border-radius: 8px; /* Added border radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+/* Heading styles */
+
+/* Stats container styles */
+.stats {
+    display: flex;
+    gap: 20px; /* Increased gap for better spacing */
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    background-color: white; /* Unified background color */
+    border-radius: 8px; /* Added border radius for a softer look */
+}
+
+/* Card styles */
+.statcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 8px; /* Increased border radius for a softer look */
+    padding: 20px; /* Added padding for better content spacing */
+    transition: background-color 0.3s, transform 0.3s; /* Added transition for smooth hover effect */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle shadow for depth */
+}
+
+.statcard:hover {
+    background-color: white;
+    transform: translateY(-5px); /* Added slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Text styles */
+.mag {
+    font-family: Montserrat;
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(50, 50, 50); /* Added color for better readability */
+    margin-bottom: 5px; /* Added margin for better spacing */
+}
+
+.cap {
+    font-family: Montserrat;
+    font-size: small;
+    font-weight: normal;
+    color: rgb(100, 100, 100); /* Added color for better readability */
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+
+/* Paragraph styles */
+p {
+    margin: 5px;
+    color: rgb(120, 120, 120); /* Added color for better readability */
+}
+
+/* Image styles */
+.statcard img {
+    height: 30px; /* Increased size for better visibility */
+    width: 30px; /* Increased size for better visibility */
+    margin-bottom: 10px; /* Added margin for better spacing */
+}
+/* Container Styles */
+.container6 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    margin-left: 480px;
+}
+
+/* Grey Heading Styles */
+.gh {
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: rgb(167, 167, 167);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.gh:hover {
+    color: rgb(127, 127, 127);
+}
+
+/* Red Heading Styles */
+.jannat {
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: rgb(247, 75, 75);
+    transition: color 0.3s ease;
+}
+
+.jannat:hover {
+    color: rgb(255, 0, 0);
+}
+.footer{
+    margin: 0px;
+    margin-top: 10px;
+   max-width: 100%;
+    padding: 0px;
+}
+.footer img{
+    width: 100%;
+}
+.card-image{
+    position: relative;
+}
+
+.box{
+    width: 250px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px;
+}
+.slide-img{
+    height: 400px;
+    position: relative;
+}
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.overlay{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background-color: #e34e4ecc;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   visibility: hidden;
+   gap: 10px;
+}
+.read{
+    display: flex;
+    width: 160px;
+    height: 40px;
+    justify-content:center;
+    align-items: center;
+    background-color: white;
+    color: rgb(227, 78, 78);
+    font-weight: bolder;
+    letter-spacing: 1px;
+    font-family: Montserrat;
+    border-radius: 5px;
+}
+.slide-img:hover .overlay{
+  visibility: visible;
+  animation:fade 0.5s;
+}
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.slider{
+    margin: 20px;
+    margin-left: 260px;
+}
+.wh{
+    font-size: 15px;
+    font-family: Montserrat;
+    font-weight: bolder;
+    color: white;
+}
+.wcap{
+    margin: 20px;
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: 1px;
+}

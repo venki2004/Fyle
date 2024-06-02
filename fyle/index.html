@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/fylelogolight.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <script src="index.js"></script>
+    <script src="lightslider.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylo</title>
+</head>
+<body>
+    <div class="popup">
+        <h2>Talk to us</h2> 
+        <p>Email*</p>
+        <input type="text" id="email">
+        <div class="name">
+            <div class="fname">
+                <p>First Name</p>
+                <input type="text" id="fname">
+            </div>
+            <div class="lname">
+                <p>Last Name</p>
+                <input type="text" id="lname">
+            </div>
+        </div>
+        <div class="checkbox">
+            <label class="custom-checkbox">
+                <input type="checkbox" id="terms-checkbox">
+                <span class="checkmark"></span>
+                I agree to Fyle's terms and conditions
+            </label>
+        </div>  
+        
+        <button id="popcont" onclick="pophandler()">Contact us</button>     
+    </div>
+    </div>
+        <div class="container">
+            <div class="leftpart">
+                <p class="rh">AWARD WINNING</h2>
+                <p class="bh">DIGITAL MARKETING AGENCY</h1>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+    feugiat et fermentum</p>
+                <button id="contact" onclick="openpopup()">CONTACT US</button>
+            </div>
+            <div class="rightpart">
+                <img src="./images/Screenshot 2024-06-01 031112.png" alt="img">
+            </div>
+        </div>
+        <div class="container2">
+            <p class="rh">WHAT WE DO</h2>
+            <div class="content">
+                <p class="bh">SERVICES WE PROVIDE FOR YOU</h1>
+                <p>Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                    feugiat et fermentum</p> 
+            </div>
+        </div>
+        <div class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/slide1.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/Slide-2.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/slide1.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/Slide-2.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/slide1.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/Slide-2.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/slide1.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/Slide-2.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+                <li class="item-a"><div class="box">
+                    <div class="slide-img">
+                        <img src="./images/slide1.png" alt="1">
+                        <div class="overlay">
+                            <p class="wh">WEB DEVOLOPMENT</p>
+                            <p class="wcap">Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus
+                                feugiat et fermentum</p>
+                            <a href="https://www.fylehq.com/" class="read">Read more</a>
+                        </div>
+                    </div>
+                </div></li>
+              </ul>
+        </div>
+        <div class="container3">
+            <p class="rh">WHY CHOOSE US</h2>
+            <p class="bh">WHY WE ARE BEST</h1>
+            <div class="qualities">
+                <div class="quality">
+                    <img src="./images/Screenshot 2024-06-01 222818.png" alt="">
+                    <p class="head">Clarified Vision & Target</p>
+                    <p class="cap">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy.</p>
+                </div>
+                <div class="quality">
+                    <img src="./images/Screenshot 2024-06-01 222818.png" alt="">
+                    <p class="head">Clarified Vision & Target</p>
+                    <p class="cap">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy.</p>
+                </div>
+                <div class="quality">
+                    <img src="./images/Screenshot 2024-06-01 222818.png" alt="">
+                    <p class="head">Clarified Vision & Target</p>
+                    <p class="cap">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy.</p>
+                </div>
+                <div class="quality">
+                    <img src="./images/Screenshot 2024-06-01 222818.png" alt="">
+                    <p class="head">Clarified Vision & Target</p>
+                    <p class="cap">Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy.</p>
+                </div>
+    
+            </div>
+        </div>
+        <div class="container4">
+            <p class="rh">OUR PROJECT</p>
+            <p class="bh">WHY WE ARE BEST</p>
+            <div class="innerContainer">
+                <div class="image">
+                    <img id="image" src="./images/a.png" alt="">
+                </div>
+                <div class="content4">
+                        <div class="card" id="a">
+                            <p class="head">Genderless Kei - Japan's Hot</p>
+                            <p class="cap">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                        </div>
+                        <div class="card" id="b">
+                            <p class="head">Better Strategy And Quality</p>
+                            <p class="cap">Set to launch on the manufacturer's now AsBOneo aircratt in 2017. it' ottering lots of</p>
+                        </div>
+                        <div class="card" id="c">
+                            <p class="head">Genderless Kei - Japan's Hot</p>
+                            <p class="cap">Set to launch on the manufacturer's new A330neo aircraft in 2017, it's offering lots of</p>
+                        </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="container5">
+            <p class="rh">EXPERT GROWTHS</h3>
+            <p class="bh">OUR COMPANY GROWTHS</h1>
+            <div class="stats">
+                <div class="customers statcard">
+                    <img src="./images/Screenshot 2024-06-01 175416.png" alt="">
+                    <p class="mag">199+</p>
+                    <p class="cap">Satisfied Customers</p>
+                </div>
+                <div class="days statcard">
+                    <img src="./images/Screenshot 2024-06-01 175452.png" alt="">
+                    <p class="mag">1591+</p>
+                    <p class="cap">Days Of Operation</p>
+                </div>
+                <div class="projects statcard">
+                    <img src="./images/Screenshot 2024-06-01 175513.png" alt="">
+                    <p class="mag">199+</p>
+                    <p class="cap">Projects Completed</p>
+                </div>
+                <div class="awards statcard">
+                    <img src="./images/Screenshot 2024-06-01 175626.png" alt="">
+                    <p class="mag">199+</p>
+                    <p class="cap">Awards Recieved</p>
+                </div>
+            </div>
+        </div>
+        <div class="container6">
+            <p class="rh">CLIENT FEEDBACK</p>
+            <p class="bh">PEOPLE SAY'S ABOUT US</p>
+            <p class="head">"Morbi sed lacus nec risus finibus feugiat et fermentum nibh. Pellentes que vitae ante at elit fringilla ac at purus, Morbi sed lacus nec risus finibus feugiat et fermentum"</p>
+            <p class="gh"><span class="jannat">JANNAT TUMPA</span> - COO, AMERIMAR ENTERPRISES, INC</p>
+        </div>
+    <div class="footer">
+        <img src="./images/footer.png" alt="">
+    </div>
+    
+</body>
+<script src="script.js"></script>
+<script src="scriptjq.js"></script>
+</html>
